@@ -1,13 +1,64 @@
-# React + Vite
+# 🌐 Ridwanur Rahman — Fullstack Developer & EEE Student
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Screenshot](https://rridwan27.netlify.app/preview.jpg) <!-- Optional: Replace or remove -->
 
-Currently, two official plugins are available:
+Welcome to my portfolio repository! This is the codebase and documentation for my personal developer portfolio, where I showcase my skills, background, and the projects I've worked on.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Site**: [rridwan27.netlify.app](https://rridwan27.netlify.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# rridwan27-portfolio
+## 🚀 About Me
+
+Hi! I'm **Ridwan**, a passionate **Fullstack Developer** and undergraduate student pursuing a **BSc in Electrical & Electronic Engineering (EEE)** at **North South University**.
+
+I specialize in building clean, modern, and performant web applications using the **MERN stack**, with a particular enthusiasm for crafting smooth UI interactions using **GSAP**.
+
+---
+
+## 🛠️ Tech Stack
+
+### 💻 Web Development
+- **Frontend**: React, Next.js, Tailwind CSS, Framer Motion, GSAP
+- **Backend**: Node.js, Express.js, MongoDB
+- **Tools**: Git, GitHub, Netlify, Vercel
+
+### ⚡ Side Interests
+- GSAP Animations
+- UI/UX Design
+- REST APIs
+
+---
+
+## 🎓 Education
+**BSc in Electrical & Electronic Engineering (EEE)**  
+*North South University*
+
+---
+
+## 🎬 Beyond Tech
+In my free time, I enjoy:
+- Watching movies 🎥  
+- Listening to music 🎧  
+
+---
+
+## 📈 Highlights
+
+- 🔧 Love building full-stack apps with a focus on performance and user experience
+- 🧠 Constant learner, always exploring new technologies and tools
+- 💬 Open to collaborations and new opportunities
+
+---
+
+## 📫 Contact Me
+
+If you want to collaborate, talk tech, or just say hi — feel free to reach out!
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/your-profile) <!-- Replace with your actual link -->
+- 📧 ridwanur13@gmail.com
+
+---
+
+## 📁 Repository Structure
+
