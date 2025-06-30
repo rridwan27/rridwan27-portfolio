@@ -1,6 +1,6 @@
 # 🌐 Ridwanur Rahman — Fullstack Developer & EEE Student
 
-![Portfolio Screenshot](https://i.ibb.co/HfSjrmsD/Screenshot-from-2025-06-30-12-14-09.png) <!-- Optional: Replace or remove -->
+<img src="/public/port.png" alt="Portfolio Screenshot" /> <!-- Optional: Replace or remove -->
 
 Welcome to my portfolio repository! This is the codebase and documentation for my personal developer portfolio, where I showcase my skills, background, and the projects I've worked on.
 
