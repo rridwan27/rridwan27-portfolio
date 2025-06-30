@@ -3,6 +3,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+html {
+  scroll-behavior: smooth;
+  transition: all 1s ease-in-out;
+}
+
 html[data-theme="dark"] {
   color: #fff !important;
   background-color: #000 !important;
