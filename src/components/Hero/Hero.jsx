@@ -47,7 +47,7 @@ const Hero = () => {
               className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0"
             >
               <Link
-                to="https://drive.google.com/file/d/1AlhEKASUwjsIkxgnTR4xTK8fgM1OOxZO/view?usp=sharing"
+                to="https://drive.google.com/file/d/1HolKsmMEPQoBGSMDhzd7xvWf5znX9-qW/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 text-lg font-semibold rounded bg-violet-600 text-white hover:bg-violet-700 transition-colors flex items-center justify-center"
