@@ -17,7 +17,7 @@ export default function Footer() {
       hoverColor: "hover:text-purple-400",
     },
     {
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://linkedin.com/in/rridwan27",
       icon: FaLinkedin,
       label: "LinkedIn",
       hoverColor: "hover:text-blue-400",

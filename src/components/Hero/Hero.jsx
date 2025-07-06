@@ -5,19 +5,19 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div>
-      <section className="min-h-screen flex items-center" id="home">
-        <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-          <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            {/* Animated Heading */}
+    <div className="bg-black text-gray-200 min-h-screen flex items-center justify-center">
+      <section className="w-full max-w-7xl px-6 py-12" id="home">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+          {/* Left: Text Content */}
+          <div className="text-center lg:text-left flex flex-col items-center lg:items-start max-w-xl">
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-5xl font-bold leading-none sm:text-6xl"
+              className="text-4xl md:text-5xl font-bold"
             >
               Hi, I'm{" "}
-              <span className="dark:text-violet-600">
+              <span className="text-violet-600">
                 <Typewriter
                   words={["Mohammad Ridwanur Rahman"]}
                   cursor
@@ -29,12 +29,11 @@ const Hero = () => {
               </span>
             </motion.h1>
 
-            {/* Animated Description */}
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="mt-6 mb-8 text-lg sm:mb-12 dark:text-gray-300"
+              className="mt-6 mb-8 text-lg text-gray-300"
             >
               Fullstack Developer passionate about building modern web
               applications with clean, efficient code.
@@ -45,19 +44,19 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"
+              className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0"
             >
               <Link
-                to="https://drive.google.com/file/d/1ozRjj0oRxLmOl1HluJxyLoKZCnyvvEHo/view?usp=sharing"
+                to="https://drive.google.com/file/d/1AlhEKASUwjsIkxgnTR4xTK8fgM1OOxZO/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 text-lg cursor-pointer flex items-center font-semibold rounded dark:bg-violet-600 dark:text-gray-50 hover:bg-violet-700 transition-colors"
+                className="px-8 py-3 text-lg font-semibold rounded bg-violet-600 text-white hover:bg-violet-700 transition-colors flex items-center justify-center"
               >
-                Download CV <Download className="w-6 h-6 ml-2" />
+                Download Resume <Download className="w-5 h-5 ml-2" />
               </Link>
               <a
                 href="#projects"
-                className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                className="px-8 py-3 text-lg font-semibold border rounded border-gray-500 hover:bg-gray-800 transition-colors"
               >
                 View Projects
               </a>
@@ -68,22 +67,22 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.6 }}
-              className="flex justify-center lg:justify-start mt-8 space-x-4"
+              className="flex mt-8 space-x-6"
             >
               <Link
                 to="https://github.com/rridwan27"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                className="p-2 rounded-full hover:bg-gray-800 transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="w-6 h-6" />
               </Link>
               <Link
-                to="https://linkedin.com/in/yourusername"
+                to="https://linkedin.com/in/rridwan27"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                className="p-2 rounded-full hover:bg-gray-800 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-6 h-6" />
@@ -91,17 +90,17 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          {/* Profile Image */}
+          {/* Right: Profile Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.2, duration: 0.6 }}
-            className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+            className="flex-shrink-0"
           >
             <img
               src="/me.png"
               alt="Mohammad Ridwanur Rahman"
-              className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded-full border-4 dark:border-violet-600"
+              className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-violet-600 object-contain"
             />
           </motion.div>
         </div>

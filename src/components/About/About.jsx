@@ -19,13 +19,13 @@ const About = () => {
     <section id="about" className="py-16 dark:bg-gray-950">
       <div className="container mx-auto px-6">
         <motion.h2
-          className="text-4xl font-bold text-center mb-12 dark:text-white"
+          className="text-4xl font-bold text-center mb-12 text-gray-100"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          About <span className="dark:text-violet-600">Me</span>
+          About <span className="text-violet-600">Me</span>
         </motion.h2>
 
         <motion.div
@@ -56,25 +56,29 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-8">
             {[
               {
-                icon: <Code className="w-5 h-5 mt-1 dark:text-violet-400" />,
+                icon: (
+                  <Code className="w-5 h-5 mt-1 text-violet-600 dark:text-violet-400" />
+                ),
                 title: "Web Development",
                 desc: "MERN Stack, GSAP, Tailwind CSS",
               },
               {
-                icon: <Cpu className="w-5 h-5 mt-1 dark:text-violet-400" />,
+                icon: (
+                  <Cpu className="w-5 h-5 mt-1 text-violet-600 dark:text-violet-400" />
+                ),
                 title: "Side Interests",
                 desc: "GSAP Animations, UI/UX, REST APIs",
               },
               {
                 icon: (
-                  <GraduationCap className="w-5 h-5 mt-1 dark:text-violet-400" />
+                  <GraduationCap className="w-5 h-5 mt-1 text-violet-600 dark:text-violet-400" />
                 ),
                 title: "Education",
                 desc: "BSc in EEE, North South University",
               },
               {
                 icon: (
-                  <BookOpen className="w-5 h-5 mt-1 dark:text-violet-400" />
+                  <BookOpen className="w-5 h-5 mt-1 text-violet-600 dark:text-violet-400" />
                 ),
                 title: "Beyond Tech",
                 desc: "Movie 🎬, Music 🎧",
@@ -82,7 +86,7 @@ const About = () => {
             ].map((item, idx) => (
               <motion.div
                 key={idx}
-                className="flex items-start gap-3 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg"
+                className="flex items-start gap-3 p-4 bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100 rounded-lg"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -91,8 +95,12 @@ const About = () => {
               >
                 {item.icon}
                 <div>
-                  <h4 className="font-semibold">{item.title}</h4>
-                  <p className="text-sm">{item.desc}</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">
+                    {item.title}
+                  </h4>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    {item.desc}
+                  </p>
                 </div>
               </motion.div>
             ))}

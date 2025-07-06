@@ -50,7 +50,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-white dark:bg-gray-950">
+    <section id="contact" className="py-20 px-6 bg-gray-950 text-white">
       <motion.div
         className="max-w-2xl mx-auto text-center"
         initial="hidden"
@@ -58,28 +58,24 @@ const Contact = () => {
         viewport={{ once: true }}
         variants={fadeUp}
       >
-        <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-          Contact <span className="text-violet-600">Me</span>
+        <h2 className="text-4xl font-bold mb-4">
+          Contact <span className="text-violet-500">Me</span>
         </h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-10">
+        <p className="text-gray-400 mb-10">
           Reach out for collaboration, job opportunities, or just to talk code.
         </p>
 
         <motion.form
           ref={form}
           onSubmit={handleSubmit}
-          className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 space-y-6 text-left"
-          aria-label="Contact form"
+          className="bg-gray-900 rounded-xl shadow-lg p-8 space-y-6 text-left border border-gray-800"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUp}
         >
           <div>
-            <label
-              htmlFor="name"
-              className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300"
-            >
+            <label htmlFor="name" className="block mb-2 text-sm text-gray-300">
               Name
             </label>
             <input
@@ -89,15 +85,13 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-violet-500"
+              className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-violet-600"
+              placeholder="Your name"
             />
           </div>
 
           <div>
-            <label
-              htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300"
-            >
+            <label htmlFor="email" className="block mb-2 text-sm text-gray-300">
               Email
             </label>
             <input
@@ -107,14 +101,15 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-violet-500"
+              className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-violet-600"
+              placeholder="you@example.com"
             />
           </div>
 
           <div>
             <label
               htmlFor="message"
-              className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300"
+              className="block mb-2 text-sm text-gray-300"
             >
               Message
             </label>
@@ -125,25 +120,26 @@ const Contact = () => {
               onChange={handleChange}
               rows="5"
               required
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-violet-500"
+              className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-violet-600"
+              placeholder="Your message..."
             ></textarea>
           </div>
 
           <button
             type="submit"
             disabled={submissionStatus === "sending"}
-            className="w-full bg-violet-600 cursor-pointer hover:bg-violet-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors disabled:opacity-60"
+            className="w-full bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3 px-6 rounded-lg transition-all disabled:opacity-60"
           >
             {submissionStatus === "sending" ? "Sending..." : "Send Message"}
           </button>
 
           {submissionStatus === "success" && (
-            <p className="text-green-600 dark:text-green-400 text-center mt-2">
+            <p className="text-green-400 text-center mt-2">
               ✅ Message sent successfully!
             </p>
           )}
           {submissionStatus === "error" && (
-            <p className="text-red-600 dark:text-red-400 text-center mt-2">
+            <p className="text-red-400 text-center mt-2">
               ❌ Failed to send message. Please try again later.
             </p>
           )}
